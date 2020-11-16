@@ -1,12 +1,10 @@
-import os
 import argparse
+import os
 from urllib.parse import urlparse
 
 import requests
 from dotenv import load_dotenv
 from requests.exceptions import HTTPError
-
-load_dotenv()
 
 
 def get_link_info(token, bitlink):
@@ -65,4 +63,5 @@ def main():
 
 
 if __name__ == '__main__':
+    load_dotenv()
     main()
