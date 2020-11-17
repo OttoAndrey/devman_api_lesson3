@@ -43,6 +43,8 @@ def get_count_clicks(token, bitlink):
 
 
 def main():
+    load_dotenv()
+
     token = os.getenv("BITLY_TOKEN")
 
     parser = argparse.ArgumentParser()
@@ -63,5 +65,4 @@ def main():
 
 
 if __name__ == '__main__':
-    load_dotenv()
     main()
